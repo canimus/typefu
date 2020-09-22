@@ -20,4 +20,7 @@ setuptools.setup(
         "Topic :: Utilities"
     ],
     python_requires='>=3.6',
+    install_requires=[
+          'pyspark>=2.4.4',
+      ],
 )
