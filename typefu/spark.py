@@ -20,7 +20,7 @@ def map_field(name, data_type, nullable):
     except:
         return map_field(name, ig('logicalType')(data_type), bool(nullable))
 
-def build_schema(json_schema):        
+def build_schema(json_schema):
     schema = T.StructType()
     _f = lambda x: map_field(*ig(*('name', 'type', 'nullable'))(x))
     [schema.add(x) for x in map(lambda x: _f(x), json_schema['fields'])]
