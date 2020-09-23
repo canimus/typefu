@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="typefu", # Replace with your own username
-    version="0.0.1",
+    version="0.0.2",
     author="Herminio Vazquez",
     author_email="canimus@gmail.com",
     description="A type casting guru from your data sources and data formats",
